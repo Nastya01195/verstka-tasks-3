@@ -12,22 +12,22 @@ td{
     padding: 10px;
     position: relative;
 }
-tr:nth-child(2n+1){
-    background-color: rgb(224,224,224);
-}
 tbody tr:hover{
-    background-color: #FFCC33;        
+    background: #ffcc33;        
 }
 td:hover::after,
 th:hover::after {
   content: "";
   position: absolute;
-  background-color: #FFCC33;
+  background: #ffcc33;
   left: 0;
   top: -5000px;
   height: 10000px;
   width: 100%;
   z-index: -1;
+}
+tr:nth-child(2n+1){
+    background: rgb(224,224,224);
 }
 button{
     visibility: hidden;
