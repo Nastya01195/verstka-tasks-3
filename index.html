@@ -345,9 +345,9 @@
         </table>
         <form method="POST">
             <label for="phone">Телефон:</label>
-            <input id="phone" type="tel" required>
+            <input id="phone" type="tel" pattern="^(\+?\d{1,}?)\s?(\(\d{3}\)|\d{3})[\d\-\s\b]*$" required>
             <label for="email">Email:</label>
-            <input id="email" type="email" required>
+            <input id="email" type="email" pattern="^\w+@[а-я\w]+\.[а-я\w]+\.?[а-я\w]+" required>
             <button type="submit">Отправить данные о рейсе на телефон</button>
         </form>
     </body>
